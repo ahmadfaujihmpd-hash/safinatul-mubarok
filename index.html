@@ -1,76 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yayasan Safinatul Mubarok | Pendidikan & Kemanusiaan</title>
-<meta name="description" content="Yayasan Pendidikan Islam Safinatul Mubarok — pendidikan, dakwah, sosial, dan kemanusiaan.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yayasan Pendidikan Islam Safinatul Mubarok — pendidikan, dakwah, dan kemanusiaan.">
+  <title>Safinatul Mubarok | Pendidikan & Kemanusiaan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
-<nav class="nav">
-<a class="brand" href="#home"><span class="brand-mark">SM</span><span><strong>Safinatul Mubarok</strong><small>Pendidikan & Kemanusiaan</small></span></a>
-<button class="hamb" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-<div class="nav-links">
-<a href="#home">Beranda</a><a href="#profil">Profil</a><a href="#pendidikan">Pendidikan</a><a href="#kemanusiaan">Kemanusiaan</a><a href="#program">Program</a><a href="#berita">Berita</a><a href="#galeri">Galeri</a><a href="#donasi">Donasi</a><a href="#kontak">Kontak</a>
-</div>
-</nav>
+  <div class="nav wrap">
+    <a class="brand" href="#beranda">
+      <img src="assets/logo.png" alt="Logo Yayasan Safinatul Mubarok">
+      <span><strong>Safinatul Mubarok</strong><small>Pendidikan & Kemanusiaan</small></span>
+    </a>
+    <button class="menu" aria-label="Buka menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#unit-pendidikan">Unit Pendidikan</a>
+      <a href="#kegiatan">Kegiatan</a>
+      <a href="#pembina">Pembina</a>
+      <a class="nav-donate" href="#donasi">Donasi</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-<section id="home" class="hero">
-<div class="hero-content">
-<div class="eyebrow">YAYASAN PENDIDIKAN ISLAM SAFINATUL MUBAROK</div>
-<h1>Menebar ilmu,<br><span>menumbuhkan kepedulian.</span></h1>
-<p>Membangun generasi berilmu, berakhlak, dan peduli kepada sesama melalui pendidikan, dakwah, serta gerakan kemanusiaan.</p>
-<div class="actions"><a class="btn btn-primary" href="#program">Jelajahi Program</a><a class="btn btn-ghost" href="#profil">Tentang Kami →</a></div>
-<div class="mini-stats"><div><b>01</b><span>Pendidikan</span></div><div><b>02</b><span>Kemanusiaan</span></div><div><b>03</b><span>Dakwah</span></div></div>
-</div>
-<div class="hero-visual"><div class="circle"><div class="arabic">وَقُلْ رَبِّ زِدْنِي عِلْمًا</div><p>“Ya Tuhanku, tambahkanlah kepadaku ilmu.”</p><small>QS. Taha: 114</small></div></div>
+<main id="beranda">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">YAYASAN PENDIDIKAN ISLAM SAFINATUL MUBAROK</p>
+      <h1>Menebar Ilmu,<br><em>Menumbuhkan<br>Kepedulian.</em></h1>
+      <p class="lead">Membangun generasi berilmu, berakhlak, dan peduli kepada sesama melalui pendidikan, dakwah, serta gerakan kemanusiaan.</p>
+      <div class="actions">
+        <a class="btn primary" href="#unit-pendidikan">Jelajahi Pendidikan</a>
+        <a class="btn light" href="#tentang">Tentang Kami →</a>
+      </div>
+      <div class="pillars">
+        <div><b>01</b><span>Pendidikan</span></div>
+        <div><b>02</b><span>Kemanusiaan</span></div>
+        <div><b>03</b><span>Dakwah</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/logo.png" alt="Logo Safinatul Mubarok">
+    </div>
+  </div>
 </section>
 
-<section id="profil" class="section">
-<div class="section-title"><span>PROFIL</span><h2>Ilmu yang tumbuh, manfaat yang mengalir.</h2></div>
-<div class="profile-grid"><div><p class="lead">Yayasan Safinatul Mubarok hadir sebagai ruang pendidikan dan pengabdian masyarakat yang menjadikan ilmu, akhlak, dan kepedulian sebagai satu kesatuan.</p></div><div><p>Kami mengembangkan pendidikan Islam, pembinaan Al-Qur’an, dakwah, dan kegiatan sosial dengan semangat melayani masyarakat. Pendidikan diharapkan tidak berhenti di ruang kelas, tetapi menjadi energi kebaikan di tengah masyarakat.</p></div></div>
+<section class="quote">
+  <div class="wrap quote-box">
+    <p>“Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia.”</p>
+    <div class="arabic">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</div>
+  </div>
 </section>
 
-<section id="pendidikan" class="section soft">
-<div class="section-title"><span>PENDIDIKAN</span><h2>Mempersiapkan generasi untuk masa depan.</h2></div>
-<div class="cards"><article><i>01</i><h3>Madrasah</h3><p>Pendidikan yang memadukan ilmu pengetahuan, nilai keislaman, dan pembentukan karakter.</p></article><article><i>02</i><h3>TPA & Al-Qur’an</h3><p>Pembelajaran Al-Qur’an yang bertahap dan menumbuhkan kecintaan kepada ilmu.</p></article><article><i>03</i><h3>Pembinaan Generasi</h3><p>Membentuk generasi yang berilmu, berakhlak, mandiri, dan mampu memberi manfaat.</p></article></div>
+<section id="tentang" class="section">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">TENTANG KAMI</p>
+      <h2>Berangkat dari ilmu,<br>hadir untuk masyarakat.</h2>
+    </div>
+    <div class="copy">
+      <p>Yayasan Pendidikan Islam Safinatul Mubarok hadir sebagai ruang untuk menumbuhkan pendidikan Islam, dakwah, dan kepedulian sosial. Kami berikhtiar menghadirkan pendidikan yang membentuk ilmu sekaligus akhlak, serta kegiatan kemanusiaan yang dekat dengan kebutuhan masyarakat.</p>
+      <p>Semangat kami sederhana: ilmu yang dipelajari menjadi amal, dan amal yang dilakukan memberi manfaat.</p>
+    </div>
+  </div>
 </section>
 
-<section id="kemanusiaan" class="section">
-<div class="section-title"><span>KEMANUSIAAN</span><h2>Kepedulian bukan sekadar kata.</h2></div>
-<div class="human-grid"><div class="human-big"><strong>Berbagi</strong><p>Setiap kebaikan dapat menjadi alasan seseorang kembali memiliki harapan.</p></div><div class="human-list"><div><b>Peduli Sesama</b><p>Menjangkau masyarakat yang membutuhkan dengan semangat gotong royong.</p></div><div><b>Berbagi Pangan</b><p>Menghadirkan bantuan kebutuhan dasar secara bermartabat.</p></div><div><b>Respons Sosial</b><p>Membangun kepedulian yang cepat, tepat, dan berkelanjutan.</p></div></div></div>
+<section id="unit-pendidikan" class="section soft">
+  <div class="wrap">
+    <p class="eyebrow">UNIT LEMBAGA PENDIDIKAN</p>
+    <h2>Empat ruang pendidikan dalam satu ikhtiar.</h2>
+    <p class="section-intro">Setiap unit memiliki karakter dan jenjangnya masing-masing, dengan semangat pendidikan Islam, pembinaan akhlak, dan kepedulian terhadap masyarakat.</p>
+    <div class="cards">
+      <a class="institution" href="ra-ibnu-sina.html"><span>01</span><h3>RA Ibnu Sina</h3><p>Pendidikan anak usia dini dengan pembiasaan nilai Islam, akhlak, dan keceriaan belajar.</p><b>Lihat profil →</b></a>
+      <a class="institution" href="tpa-safinatul-mubarok.html"><span>02</span><h3>TPA Safinatul Mubarok</h3><p>Pembelajaran Al-Qur’an, baca tulis Al-Qur’an, hafalan, dan pembinaan dasar keislaman.</p><b>Lihat profil →</b></a>
+      <a class="institution" href="mt-safinatul-mubarok.html"><span>03</span><h3>MT. Safinatul Mubarok</h3><p>Jenjang pendidikan yang mengembangkan ilmu pengetahuan, keislaman, karakter, dan kemandirian peserta didik.</p><b>Lihat profil →</b></a>
+      <a class="institution" href="pondok-pesantren.html"><span>04</span><h3>Pondok Pesantren Safinatul Mubarok</h3><p>Pendidikan kepesantrenan yang menumbuhkan tradisi keilmuan, akhlak, ibadah, dan kehidupan bermasyarakat.</p><b>Lihat profil →</b></a>
+    </div>
+  </div>
 </section>
 
-<section id="program" class="section dark">
-<div class="section-title"><span>PROGRAM UTAMA</span><h2>Langkah kecil, manfaat besar.</h2></div>
-<div class="program-grid"><div><b>01</b><h3>Beasiswa Pendidikan</h3><p>Mendukung anak-anak agar memiliki kesempatan belajar yang lebih baik.</p></div><div><b>02</b><h3>Santunan Sosial</h3><p>Menyalurkan kepedulian kepada keluarga dan masyarakat yang membutuhkan.</p></div><div><b>03</b><h3>Wakaf Pendidikan</h3><p>Membangun sumber daya pendidikan yang bermanfaat untuk jangka panjang.</p></div><div><b>04</b><h3>Dakwah & Pembinaan</h3><p>Pengajian, kajian, dan pembinaan keagamaan untuk masyarakat.</p></div></div>
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">PROGRAM & GERAKAN</p>
+    <h2>Ilmu yang tumbuh, manfaat yang bergerak.</h2>
+    <div class="cards">
+      <article><span>01</span><h3>Dakwah & Pengajian</h3><p>Majelis ilmu, pengajian, peringatan hari besar Islam, dan pembinaan masyarakat.</p></article>
+      <article><span>02</span><h3>Gerakan Kemanusiaan</h3><p>Santunan, kepedulian sosial, dan berbagai ikhtiar membantu sesama.</p></article>
+      <article><span>03</span><h3>Pembinaan Generasi</h3><p>Menumbuhkan generasi yang berilmu, berakhlak, mandiri, dan bermanfaat.</p></article>
+      <article><span>04</span><h3>Pemberdayaan Masyarakat</h3><p>Membangun kebersamaan melalui pendidikan, dakwah, dan kegiatan sosial yang berkelanjutan.</p></article>
+    </div>
+  </div>
 </section>
 
-<section id="berita" class="section soft">
-<div class="section-title"><span>BERITA & KEGIATAN</span><h2>Kabar dari langkah kebaikan.</h2></div>
-<div class="news-grid"><article><span>KEGIATAN</span><h3>Pengajian & Pembinaan Masyarakat</h3><p>Ruang belajar bersama untuk memperkuat ilmu, akhlak, dan ukhuwah.</p><a href="#kontak">Selengkapnya →</a></article><article><span>PENDIDIKAN</span><h3>Membangun Generasi Berilmu</h3><p>Program pendidikan dan pembinaan untuk menyiapkan generasi masa depan.</p><a href="#pendidikan">Selengkapnya →</a></article><article><span>SOSIAL</span><h3>Gerakan Berbagi untuk Sesama</h3><p>Mengajak masyarakat menjadi bagian dari rantai kebaikan.</p><a href="#donasi">Dukung Program →</a></article></div>
+<section id="pembina" class="section">
+  <div class="wrap profile">
+    <div class="profile-photo"><img src="assets/pembina.png" alt="Dr (c) KH. Ahmad Faujih, M.Pd."></div>
+    <div class="profile-text">
+      <p class="eyebrow">PEMBINA YAYASAN</p>
+      <h2>Dr (c) KH. Ahmad Faujih, M.Pd.</h2>
+      <p class="role">Pembina Yayasan Pendidikan Islam Safinatul Mubarok</p>
+      <p>Berkomitmen mengembangkan pendidikan Islam yang berakar pada ilmu, akhlak, tradisi keilmuan, dan kepedulian terhadap masyarakat.</p>
+      <a class="text-link" href="#kegiatan">Lihat kegiatan →</a>
+    </div>
+  </div>
 </section>
 
-<section id="galeri" class="section">
-<div class="section-title"><span>GALERI</span><h2>Dokumentasi kegiatan.</h2></div>
-<div class="gallery"><div class="g"><span>Foto Pendidikan</span></div><div class="g"><span>Foto Kegiatan</span></div><div class="g"><span>Foto Kemanusiaan</span></div><div class="g"><span>Foto Dakwah</span></div></div>
-<p class="hint">Galeri siap diisi dengan foto asli kegiatan Yayasan Safinatul Mubarok.</p>
+<section id="kegiatan" class="section soft">
+  <div class="wrap">
+    <p class="eyebrow">KEGIATAN</p>
+    <h2>Menghidupkan ilmu dan kebersamaan.</h2>
+    <div class="event">
+      <img src="assets/kegiatan.png" alt="Kegiatan Maulid Nabi Muhammad SAW di Musholla Safinatul Mubarok">
+      <div class="event-info">
+        <p class="tag">AGENDA & DOKUMENTASI</p>
+        <h3>Maulid Nabi Muhammad SAW</h3>
+        <p>Dokumentasi kegiatan Musholla Safinatul Mubarok sebagai bagian dari ikhtiar dakwah, silaturahmi, dan pembinaan masyarakat.</p>
+        <a class="btn primary" href="#donasi">Dukung Gerakan Kami</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="donasi" class="donation">
-<div><span>DONASI & DUKUNGAN</span><h2>Mari ikut menyalakan cahaya kebaikan.</h2><p>Dukungan Anda dapat membantu pendidikan, kegiatan sosial, dan program kemanusiaan berjalan secara berkelanjutan.</p></div>
-<div class="donation-box"><h3>Salurkan Kepedulian</h3><p>Informasi rekening dan metode donasi dapat dicantumkan di sini.</p><a class="btn btn-primary" href="#kontak">Hubungi Pengelola</a></div>
-</section>
-
-<section id="kontak" class="contact section">
-<div><div class="section-title"><span>KONTAK</span><h2>Mari bergerak bersama.</h2></div><p>Untuk kerja sama, informasi program, kegiatan sosial, dan pendidikan, silakan menghubungi kami.</p></div>
-<div class="contact-card"><p><strong>Yayasan Pendidikan Islam Safinatul Mubarok</strong></p><p>Jl. Raya Prepedan, Tegal Alur, Kalideres, Jakarta Barat</p><p>WhatsApp: <em>Tambahkan nomor WhatsApp</em></p><a class="btn btn-primary" href="https://wa.me/" target="_blank">WhatsApp Kami</a></div>
+<section id="donasi" class="donate">
+  <div class="wrap donate-box">
+    <div><p class="eyebrow">BERBAGI KEBAIKAN</p><h2>Mari tumbuhkan manfaat bersama.</h2><p>Ruang donasi dapat diisi dengan rekening resmi yayasan, QRIS, atau kontak pengelola setelah datanya tersedia.</p></div>
+    <a class="btn white" href="https://wa.me/" target="_blank" rel="noopener">Hubungi Pengelola →</a>
+  </div>
 </section>
 </main>
 
-<footer><div><strong>Safinatul Mubarok</strong><p>Pendidikan • Dakwah • Kemanusiaan</p></div><small>© 2026 Yayasan Safinatul Mubarok</small></footer>
-</body></html>
+<footer>
+  <div class="wrap footer-grid">
+    <div><strong>Safinatul Mubarok</strong><p>Pendidikan • Dakwah • Kemanusiaan</p></div>
+    <div><p>© 2026 Yayasan Pendidikan Islam Safinatul Mubarok</p></div>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.links a').forEach(a => a.addEventListener('click', () => document.querySelector('.links').classList.remove('open')));
+</script>
+</body>
+</html>
