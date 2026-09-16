@@ -476,4 +476,367 @@ footer p{
   .institution{
     padding:24px;
   }
+}/* ===== DESAIN PREMIUM SAFINATUL MUBAROK ===== */
+
+body{
+  background:#faf9f4;
+  color:#26352f;
 }
+
+.header{
+  background:rgba(255,255,255,.98);
+  border-bottom:1px solid #e7dfc7;
+  box-shadow:0 4px 25px rgba(0,0,0,.06);
+}
+
+.nav{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+}
+
+.brand span{
+  display:flex;
+  flex-direction:column;
+  color:#064e3b;
+  font-size:21px;
+  line-height:1.2;
+}
+
+.brand span:after{
+  content:"Pendidikan & Kemanusiaan";
+  font-size:11px;
+  font-weight:400;
+  color:#8a918c;
+  margin-top:5px;
+  letter-spacing:1px;
+}
+
+.menu{
+  display:none;
+  background:none;
+  color:#064e3b;
+  font-size:30px;
+  padding:5px;
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.links a{
+  color:#34443d;
+  font-size:14px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.links a:hover{
+  color:#c9a227;
+}
+
+.nav-donate{
+  padding:11px 22px!important;
+  border-radius:30px;
+  background:#064e3b;
+  color:#fff!important;
+  box-shadow:0 8px 20px rgba(6,78,59,.18);
+}
+
+.nav-donate:hover{
+  background:#c9a227;
+  color:#17251f!important;
+}
+
+/* HERO PREMIUM */
+
+.hero{
+  min-height:650px;
+  padding:110px 0 100px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 90% 20%,rgba(201,162,39,.18),transparent 30%),
+    linear-gradient(135deg,#022c22 0%,#064e3b 65%,#0b7054 100%);
+  color:white;
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  right:-250px;
+  top:-220px;
+  border:1px solid rgba(232,210,138,.25);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 35px rgba(232,210,138,.04),
+    0 0 0 70px rgba(232,210,138,.03);
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.eyebrow{
+  color:#e8d28a!important;
+  font-size:13px!important;
+  font-weight:700;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  margin:0;
+  max-width:800px;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(45px,6vw,76px);
+  line-height:1.08;
+  letter-spacing:-1px;
+  color:#fff;
+}
+
+.hero h1 em{
+  color:#e8d28a;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:650px;
+  color:rgba(255,255,255,.82);
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* TOMBOL HERO */
+
+.hero .btn,
+.hero button{
+  margin-top:18px;
+}
+
+.hero a{
+  transition:.3s;
+}
+
+.hero a:hover{
+  transform:translateY(-3px);
+}
+
+/* SECTION */
+
+.section-intro{
+  margin-bottom:55px;
+}
+
+.section-intro h2,
+section h2{
+  font-family:'Playfair Display',serif;
+  color:#064e3b;
+  font-weight:700;
+}
+
+.section-intro h2:after,
+section h2:after{
+  background:#c9a227;
+  height:3px;
+}
+
+/* KARTU PENDIDIKAN */
+
+.institution{
+  position:relative;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #eee7d5;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 10px 35px rgba(2,44,34,.07);
+}
+
+.institution:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background:#c9a227;
+  transform:scaleY(0);
+  transform-origin:bottom;
+  transition:.3s;
+}
+
+.institution:hover:before{
+  transform:scaleY(1);
+}
+
+.institution h3{
+  font-family:'Playfair Display',serif;
+  color:#064e3b;
+}
+
+/* QUOTE */
+
+.quote{
+  background:#fff;
+}
+
+.quote-box{
+  border:1px solid #e7d7a6;
+  background:linear-gradient(135deg,#fffdf7,#f4f0df);
+  box-shadow:0 15px 45px rgba(2,44,34,.08);
+}
+
+/* PEMBINA */
+
+.pembina{
+  background:#fff;
+  border:1px solid #eee7d5;
+  box-shadow:0 15px 45px rgba(2,44,34,.08);
+}
+
+.pembina img{
+  border:5px solid #e8d28a;
+}
+
+.pembina h2{
+  color:#064e3b;
+}
+
+/* DONASI */
+
+.donate{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(201,162,39,.18),transparent 25%),
+    linear-gradient(135deg,#022c22,#064e3b);
+  border-radius:28px;
+  box-shadow:0 20px 50px rgba(2,44,34,.18);
+}
+
+.donate h2{
+  color:#fff;
+}
+
+.donate .btn-primary{
+  background:#e0bb45;
+  color:#17251f;
+}
+
+/* HALAMAN DALAM */
+
+.page-hero{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(201,162,39,.2),transparent 30%),
+    linear-gradient(135deg,#022c22,#064e3b);
+}
+
+.page-hero h1{
+  font-family:'Playfair Display',serif;
+}
+
+/* FOOTER */
+
+footer{
+  background:#022c22;
+  border-top:3px solid #c9a227;
+}
+
+footer h2{
+  font-family:'Playfair Display',serif;
+  color:#e8d28a;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .nav{
+    min-height:72px;
+  }
+
+  .brand img{
+    width:50px;
+    height:50px;
+  }
+
+  .brand span{
+    font-size:18px;
+  }
+
+  .brand span:after{
+    font-size:9px;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .links{
+    display:none;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:80px 0 70px;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .eyebrow{
+    font-size:11px!important;
+    letter-spacing:3px;
+  }
+
+  section{
+    padding:65px 0;
+  }
+}
+
+@media(max-width:480px){
+
+  .hero h1{
+    font-size:39px;
+  }
+
+  .institution{
+    padding:24px;
+  }
+
+  .quote-box{
+    padding:30px 20px;
+  }
+    }
