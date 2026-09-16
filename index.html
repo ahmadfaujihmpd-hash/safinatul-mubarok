@@ -1,89 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safinatul Mubarok | Pendidikan & Kemanusiaan</title>
-<meta name="description" content="Website Pendidikan dan Kemanusiaan Yayasan Safinatul Mubarok. Bergerak dalam pendidikan, dakwah, kepedulian sosial, dan kemanusiaan.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yayasan Safinatul Mubarok | Pendidikan & Kemanusiaan</title>
+<meta name="description" content="Yayasan Pendidikan Islam Safinatul Mubarok — pendidikan, dakwah, sosial, dan kemanusiaan.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <nav class="nav">
-    <div class="brand"><span class="logo">SM</span><div><b>Safinatul Mubarok</b><small>Pendidikan & Kemanusiaan</small></div></div>
-    <button class="menu" onclick="toggleMenu()">☰</button>
-    <div id="links" class="links">
-      <a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#pendidikan">Pendidikan</a>
-      <a href="#kemanusiaan">Kemanusiaan</a><a href="#program">Program</a><a href="#berita">Berita</a><a href="#kontak">Kontak</a>
-    </div>
-  </nav>
+<header class="header">
+<nav class="nav">
+<a class="brand" href="#home"><span class="brand-mark">SM</span><span><strong>Safinatul Mubarok</strong><small>Pendidikan & Kemanusiaan</small></span></a>
+<button class="hamb" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<div class="nav-links">
+<a href="#home">Beranda</a><a href="#profil">Profil</a><a href="#pendidikan">Pendidikan</a><a href="#kemanusiaan">Kemanusiaan</a><a href="#program">Program</a><a href="#berita">Berita</a><a href="#galeri">Galeri</a><a href="#donasi">Donasi</a><a href="#kontak">Kontak</a>
+</div>
+</nav>
 </header>
 
 <main>
-<section id="beranda" class="hero">
-  <div class="hero-text">
-    <span class="badge">Pendidikan • Dakwah • Kemanusiaan</span>
-    <h1>Menebar Ilmu,<br><em>Menumbuhkan Kepedulian.</em></h1>
-    <p>Membangun generasi berilmu, berakhlak, dan peduli kepada sesama melalui pendidikan dan gerakan kemanusiaan.</p>
-    <div class="buttons"><a class="btn primary" href="#program">Lihat Program</a><a class="btn light" href="#tentang">Kenal Kami</a></div>
-  </div>
-  <div class="hero-card"><div class="quote">“Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia.”</div><div class="arabic">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</div></div>
+<section id="home" class="hero">
+<div class="hero-content">
+<div class="eyebrow">YAYASAN PENDIDIKAN ISLAM SAFINATUL MUBAROK</div>
+<h1>Menebar ilmu,<br><span>menumbuhkan kepedulian.</span></h1>
+<p>Membangun generasi berilmu, berakhlak, dan peduli kepada sesama melalui pendidikan, dakwah, serta gerakan kemanusiaan.</p>
+<div class="actions"><a class="btn btn-primary" href="#program">Jelajahi Program</a><a class="btn btn-ghost" href="#profil">Tentang Kami →</a></div>
+<div class="mini-stats"><div><b>01</b><span>Pendidikan</span></div><div><b>02</b><span>Kemanusiaan</span></div><div><b>03</b><span>Dakwah</span></div></div>
+</div>
+<div class="hero-visual"><div class="circle"><div class="arabic">وَقُلْ رَبِّ زِدْنِي عِلْمًا</div><p>“Ya Tuhanku, tambahkanlah kepadaku ilmu.”</p><small>QS. Taha: 114</small></div></div>
 </section>
 
-<section id="tentang" class="section">
-  <div class="section-head"><span>TENTANG KAMI</span><h2>Pendidikan yang melahirkan kepedulian</h2></div>
-  <div class="two">
-    <p>Yayasan Safinatul Mubarok hadir sebagai ruang untuk mengembangkan pendidikan Islam sekaligus menguatkan kepedulian sosial. Kami percaya bahwa ilmu bukan hanya untuk diketahui, tetapi untuk diamalkan dan memberi manfaat.</p>
-    <p>Melalui lembaga pendidikan, pembinaan keagamaan, kegiatan masyarakat, dan program sosial, kami berupaya menghadirkan manfaat yang nyata dan berkelanjutan bagi masyarakat.</p>
-  </div>
+<section id="profil" class="section">
+<div class="section-title"><span>PROFIL</span><h2>Ilmu yang tumbuh, manfaat yang mengalir.</h2></div>
+<div class="profile-grid"><div><p class="lead">Yayasan Safinatul Mubarok hadir sebagai ruang pendidikan dan pengabdian masyarakat yang menjadikan ilmu, akhlak, dan kepedulian sebagai satu kesatuan.</p></div><div><p>Kami mengembangkan pendidikan Islam, pembinaan Al-Qur’an, dakwah, dan kegiatan sosial dengan semangat melayani masyarakat. Pendidikan diharapkan tidak berhenti di ruang kelas, tetapi menjadi energi kebaikan di tengah masyarakat.</p></div></div>
 </section>
 
-<section id="pendidikan" class="section alt">
-  <div class="section-head"><span>PENDIDIKAN</span><h2>Membuka jalan bagi masa depan</h2></div>
-  <div class="cards">
-    <article><div class="icon">📚</div><h3>Madrasah</h3><p>Pendidikan dasar yang memadukan ilmu pengetahuan, nilai keislaman, dan pembentukan karakter.</p></article>
-    <article><div class="icon">🕌</div><h3>TPA & Tahfiz</h3><p>Membimbing anak-anak mencintai Al-Qur’an melalui pembelajaran yang bertahap dan menyenangkan.</p></article>
-    <article><div class="icon">🎓</div><h3>Pembinaan Generasi</h3><p>Mendorong lahirnya generasi yang berilmu, berakhlak, mandiri, dan bermanfaat.</p></article>
-  </div>
+<section id="pendidikan" class="section soft">
+<div class="section-title"><span>PENDIDIKAN</span><h2>Mempersiapkan generasi untuk masa depan.</h2></div>
+<div class="cards"><article><i>01</i><h3>Madrasah</h3><p>Pendidikan yang memadukan ilmu pengetahuan, nilai keislaman, dan pembentukan karakter.</p></article><article><i>02</i><h3>TPA & Al-Qur’an</h3><p>Pembelajaran Al-Qur’an yang bertahap dan menumbuhkan kecintaan kepada ilmu.</p></article><article><i>03</i><h3>Pembinaan Generasi</h3><p>Membentuk generasi yang berilmu, berakhlak, mandiri, dan mampu memberi manfaat.</p></article></div>
 </section>
 
 <section id="kemanusiaan" class="section">
-  <div class="section-head"><span>KEMANUSIAAN</span><h2>Karena kepedulian harus menjadi tindakan</h2></div>
-  <div class="cards">
-    <article><div class="icon">🤝</div><h3>Peduli Sesama</h3><p>Berbagi dan membantu masyarakat yang membutuhkan melalui kegiatan sosial dan kemanusiaan.</p></article>
-    <article><div class="icon">🍚</div><h3>Berbagi Pangan</h3><p>Menguatkan kepedulian melalui distribusi makanan dan kebutuhan pokok bagi masyarakat.</p></article>
-    <article><div class="icon">❤️</div><h3>Respons Sosial</h3><p>Membangun gerakan bersama agar bantuan dapat hadir secara cepat, tepat, dan bermartabat.</p></article>
-  </div>
+<div class="section-title"><span>KEMANUSIAAN</span><h2>Kepedulian bukan sekadar kata.</h2></div>
+<div class="human-grid"><div class="human-big"><strong>Berbagi</strong><p>Setiap kebaikan dapat menjadi alasan seseorang kembali memiliki harapan.</p></div><div class="human-list"><div><b>Peduli Sesama</b><p>Menjangkau masyarakat yang membutuhkan dengan semangat gotong royong.</p></div><div><b>Berbagi Pangan</b><p>Menghadirkan bantuan kebutuhan dasar secara bermartabat.</p></div><div><b>Respons Sosial</b><p>Membangun kepedulian yang cepat, tepat, dan berkelanjutan.</p></div></div></div>
 </section>
 
 <section id="program" class="section dark">
-  <div class="section-head"><span>PROGRAM</span><h2>Langkah kecil, manfaat besar</h2></div>
-  <div class="programs">
-    <div><b>01</b><h3>Pendidikan Anak</h3><p>Beasiswa, pembinaan, dan penguatan literasi keislaman.</p></div>
-    <div><b>02</b><h3>Santunan Sosial</h3><p>Menyalurkan kepedulian kepada keluarga dan anak yang membutuhkan.</p></div>
-    <div><b>03</b><h3>Gerakan Wakaf</h3><p>Mendorong wakaf produktif untuk keberlanjutan pendidikan dan sosial.</p></div>
-    <div><b>04</b><h3>Dakwah Masyarakat</h3><p>Pengajian, pembinaan, dan kegiatan keagamaan yang terbuka bagi masyarakat.</p></div>
-  </div>
+<div class="section-title"><span>PROGRAM UTAMA</span><h2>Langkah kecil, manfaat besar.</h2></div>
+<div class="program-grid"><div><b>01</b><h3>Beasiswa Pendidikan</h3><p>Mendukung anak-anak agar memiliki kesempatan belajar yang lebih baik.</p></div><div><b>02</b><h3>Santunan Sosial</h3><p>Menyalurkan kepedulian kepada keluarga dan masyarakat yang membutuhkan.</p></div><div><b>03</b><h3>Wakaf Pendidikan</h3><p>Membangun sumber daya pendidikan yang bermanfaat untuk jangka panjang.</p></div><div><b>04</b><h3>Dakwah & Pembinaan</h3><p>Pengajian, kajian, dan pembinaan keagamaan untuk masyarakat.</p></div></div>
 </section>
 
-<section id="berita" class="section alt">
-  <div class="section-head"><span>BERITA & KEGIATAN</span><h2>Kabar dari langkah kami</h2></div>
-  <div class="news">
-    <article><div class="date">KEGIATAN</div><h3>Pengajian & Pembinaan Masyarakat</h3><p>Ruang belajar bersama untuk memperkuat ilmu, akhlak, dan ukhuwah.</p></article>
-    <article><div class="date">SOSIAL</div><h3>Berbagi untuk Sesama</h3><p>Gerakan kepedulian yang mengajak masyarakat untuk saling menguatkan.</p></article>
-    <article><div class="date">PENDIDIKAN</div><h3>Membangun Generasi</h3><p>Menyiapkan anak-anak dengan pendidikan dan lingkungan yang baik.</p></article>
-  </div>
+<section id="berita" class="section soft">
+<div class="section-title"><span>BERITA & KEGIATAN</span><h2>Kabar dari langkah kebaikan.</h2></div>
+<div class="news-grid"><article><span>KEGIATAN</span><h3>Pengajian & Pembinaan Masyarakat</h3><p>Ruang belajar bersama untuk memperkuat ilmu, akhlak, dan ukhuwah.</p><a href="#kontak">Selengkapnya →</a></article><article><span>PENDIDIKAN</span><h3>Membangun Generasi Berilmu</h3><p>Program pendidikan dan pembinaan untuk menyiapkan generasi masa depan.</p><a href="#pendidikan">Selengkapnya →</a></article><article><span>SOSIAL</span><h3>Gerakan Berbagi untuk Sesama</h3><p>Mengajak masyarakat menjadi bagian dari rantai kebaikan.</p><a href="#donasi">Dukung Program →</a></article></div>
 </section>
 
-<section id="kontak" class="contact">
-  <div><span>HUBUNGI KAMI</span><h2>Mari menjadi bagian dari kebaikan.</h2><p>Untuk kerja sama, informasi program, donasi, atau kegiatan sosial, silakan hubungi kami.</p></div>
-  <div class="contact-box"><p><b>Yayasan Pendidikan Islam Safinatul Mubarok</b></p><p>Jl. Raya Prepedan, Tegal Alur, Kalideres, Jakarta Barat</p><a class="btn primary" href="https://wa.me/" target="_blank">Hubungi via WhatsApp</a></div>
+<section id="galeri" class="section">
+<div class="section-title"><span>GALERI</span><h2>Dokumentasi kegiatan.</h2></div>
+<div class="gallery"><div class="g"><span>Foto Pendidikan</span></div><div class="g"><span>Foto Kegiatan</span></div><div class="g"><span>Foto Kemanusiaan</span></div><div class="g"><span>Foto Dakwah</span></div></div>
+<p class="hint">Galeri siap diisi dengan foto asli kegiatan Yayasan Safinatul Mubarok.</p>
+</section>
+
+<section id="donasi" class="donation">
+<div><span>DONASI & DUKUNGAN</span><h2>Mari ikut menyalakan cahaya kebaikan.</h2><p>Dukungan Anda dapat membantu pendidikan, kegiatan sosial, dan program kemanusiaan berjalan secara berkelanjutan.</p></div>
+<div class="donation-box"><h3>Salurkan Kepedulian</h3><p>Informasi rekening dan metode donasi dapat dicantumkan di sini.</p><a class="btn btn-primary" href="#kontak">Hubungi Pengelola</a></div>
+</section>
+
+<section id="kontak" class="contact section">
+<div><div class="section-title"><span>KONTAK</span><h2>Mari bergerak bersama.</h2></div><p>Untuk kerja sama, informasi program, kegiatan sosial, dan pendidikan, silakan menghubungi kami.</p></div>
+<div class="contact-card"><p><strong>Yayasan Pendidikan Islam Safinatul Mubarok</strong></p><p>Jl. Raya Prepedan, Tegal Alur, Kalideres, Jakarta Barat</p><p>WhatsApp: <em>Tambahkan nomor WhatsApp</em></p><a class="btn btn-primary" href="https://wa.me/" target="_blank">WhatsApp Kami</a></div>
 </section>
 </main>
 
-<footer><b>Safinatul Mubarok</b><p>Pendidikan, Dakwah & Kemanusiaan</p><small>© 2026 Yayasan Safinatul Mubarok. Semua hak dilindungi.</small></footer>
-<script>
-function toggleMenu(){document.getElementById('links').classList.toggle('show')}
-</script>
-</body>
-</html>
+<footer><div><strong>Safinatul Mubarok</strong><p>Pendidikan • Dakwah • Kemanusiaan</p></div><small>© 2026 Yayasan Safinatul Mubarok</small></footer>
+</body></html>
