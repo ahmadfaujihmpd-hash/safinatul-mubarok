@@ -840,3 +840,55 @@ footer h2{
     padding:30px 20px;
   }
     }
+
+
+/* PERBAIKAN HERO */
+
+.hero-grid{
+  background:transparent !important;
+  box-shadow:none !important;
+  border:none !important;
+}
+
+.hero-grid > div{
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.hero .quote{
+  background:transparent !important;
+  color:#fff !important;
+  box-shadow:none !important;
+  border:none !important;
+}
+
+.hero .btn-primary{
+  display:inline-block;
+  background:#d5ad3b !important;
+  color:#17362d !important;
+  padding:14px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-right:10px;
+}
+
+.hero .btn-secondary{
+  display:inline-block;
+  color:#fff !important;
+  border:1px solid #fff;
+  padding:13px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero p{
+  background:transparent !important;
+}
+
+@media(max-width:850px){
+  .hero-grid{
+    background:transparent !important;
+  }
+}
